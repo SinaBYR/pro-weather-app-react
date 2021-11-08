@@ -4,8 +4,8 @@ import classes from './Welcome.module.css';
 const welcome = props => {
     return(
         <div className={classes.Welcome}>
-            <h4>Welcome to the weather app!</h4>
-            <p>A little introduction to my app.</p>
+            <h4>Welcome!</h4>
+            <p>Ready for a little introduction to the weather app?</p>
             <button onClick={() => props.add()}>Take tour</button>
         </div>
     )
