@@ -1,0 +1,41 @@
+.Errors{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /* width: 250px; */
+    /* height: 00px; */
+    display: flex;
+    justify-self: center;
+    align-self: center;
+    text-align: center;
+    background-color: #393e46;
+    color: #eeeeee;
+    border: 2px solid #00adb5;
+    border-radius: 15px;
+}
+.Errors h2{
+    font-size: 2.5rem;
+}
+.Errors p{
+    padding: 0.5rem 1rem;
+}
+.Errors div{
+    position: absolute;
+    top: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20px;
+    height: 20px;
+    background-color: #00adb5;
+    color: #393e46;
+    font-size: 2rem;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.Errors div:hover{
+    background-color: #00858c;
+}

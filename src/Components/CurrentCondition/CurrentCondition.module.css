@@ -1,0 +1,11 @@
+.CurrentCondition{
+    max-width: 300px;
+    height: 400px;
+}
+
+@media(max-width: 800px){
+    .CurrentCondition{
+        min-width: 300px;
+        margin-bottom: 1rem;
+    }
+}

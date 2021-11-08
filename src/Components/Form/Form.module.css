@@ -1,0 +1,48 @@
+.Form {
+    position: relative;
+}
+.Form input{
+    display: block;
+    width: 100%;
+    background-color: #393e46;
+    color: #ccc;
+    font-size: 1.3rem;
+    padding: 0.25rem 1rem;
+    outline: none;
+    border: 4px solid white;
+    border-radius: 50px;
+    overflow: hidden;
+}
+.Form input:focus{
+    border: 4px solid #00adb5;
+}
+.Form input:focus + .Icon button{
+    color: #00adb5;
+}
+.Form .Icon{
+    position: absolute;
+    top: 6px;
+    right: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+    /* border: 1px solid #00adb5; */
+    background: #393e46;
+    border-radius: 50%;
+    overflow: visible;
+}
+.Form .Icon button{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background-color: transparent;
+    color: white;
+    cursor: pointer;
+    outline: none;
+    border: none;
+}
+.Form .Icon button:active{
+    color: #038990;
+}

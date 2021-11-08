@@ -1,0 +1,77 @@
+.ForeCastCard{
+    display: grid;
+    grid-template-rows: 20% 40% 40%;
+    align-items: center;
+    height: 100%;
+    background-color: #393e46 ;
+    color: #eeeeee;
+    border: 4px solid #00adb5;
+    border-radius: 15px;
+    background-color: red;
+    background-color: #393e46;
+    text-align: center;
+}
+.ForeCastCard .Icons{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    /* background-color: blue; */
+    border-bottom: 2px solid #00adb5;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+}
+.ForeCastCard .Icons .Day,
+.ForeCastCard .Icons .Night{
+    width: 100%;
+    height: 100%;
+}
+
+.ForeCastCard .Icons .Icon{
+    width: 100%;
+    height: 70%;
+    /* background-color: orange; */
+}
+.ForeCastCard .Icons > .Day > .Icon{
+    position: relative;
+    /* background-color: brown; */
+    border-right: 2px solid transparent;
+}
+.ForeCastCard .Icons .Day > .Icon::before{
+    content: '';
+    position: absolute;
+    top: 10%;
+    right: 0;
+    width: 1px;
+    height: 80%;
+    background-color: #00adb5;
+}
+.ForeCastCard .Temperatures{
+    /* border-bottom: 4px solid #00adb5; */
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+}
+.ForeCastCard .Temperatures > *:last-child{
+    color: #bbbbbb;
+}
+
+@media(max-width: 800px){
+    .ForeCastCard{
+        min-width: 100%;
+        max-width: 100%;
+        justify-self: center;
+    }
+}
+
+@media(max-width: 500px){
+    .ForeCastCard{
+        min-width: 100%;
+        max-width: 100%;
+    }
+}

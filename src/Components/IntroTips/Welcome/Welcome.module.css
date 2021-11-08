@@ -1,0 +1,42 @@
+.Welcome{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #393e46;
+    color: #eeeeee;
+    padding: 1rem;
+    border: 3px solid #00adb5;
+    border-radius: 15px;
+    text-align: justify;
+}
+.Welcome h4{
+    margin-bottom: 0.25rem;
+}
+.Welcome button{
+    width: 100%;
+    background-color: teal;
+    color: white;
+    padding: 0.25rem 0.5rem;
+    margin-top: 0.5rem;
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+.Welcome button:hover{
+    background-color: rgb(0, 93, 93);
+}
+
+@media(max-width: 500px){
+    .Welcome{
+        padding: 1rem;
+        text-align: left;
+        line-height: 1.2;
+    }
+    .Welcome p{
+        text-align: center;
+    }
+    .Welcome > *{
+        margin: 0.25rem 0;
+    }
+}
