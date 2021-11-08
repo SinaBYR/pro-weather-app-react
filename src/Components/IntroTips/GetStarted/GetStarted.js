@@ -4,8 +4,8 @@ import classes from './GetStarted.module.css';
 const getStarted = props => {
     return(
         <div className={classes.GetStarted}>
-            <h4>Excited?</h4>
-            <p>Then let's get started!</p>
+            <h4>Thank you</h4>
+            <p>Let's get started.</p>
             <button 
                 onClick={() => {
                     props.add()
