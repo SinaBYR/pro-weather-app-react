@@ -51,9 +51,8 @@ class layout extends Component {
 
     // Data fetchers
     cityLocationDataFetcher = (term) => {
-        const apiKey = 'd8Oi7nJm2UBP54GXU80eNwAHSRby5z1v';
         const city = term;
-        const url = `https://dataservice.accuweather.com/locations/v1/cities/search?apikey=${apiKey}&q=${city}`;
+        const url = `https://dataservice.accuweather.com/locations/v1/cities/search?apikey=${process.env.REACT_APP_WEATHER_API_KEY}&q=${city}`;
         fetch(url)
             .then(res => res.json())
             .then(data => {
